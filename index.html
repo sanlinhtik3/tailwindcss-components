@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Components</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tailwindcss.com/favicons/favicon-32x32.png?v=3"/>
+    <style>
+        @font-face {
+            font-family: 'Euclid-Circular-A';
+            src: url('./assets/fonts/euclid-circular-a-cufonfonts/Euclid-Circular-A-Medium.ttf');
+        }
+        @font-face {
+            font-family: 'Euclid-Circular-A-Bold';
+            src: url('./assets/fonts/euclid-circular-a-cufonfonts/Euclid-Circular-A-Bold.ttf');
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Euclid-Circular-A'],
+                        'sans-bold': ['Euclid-Circular-A-Bold']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="shadow p-5">
+            <h1 class="text-3xl font-sans-bold mb-5">Tailwind CSS Components</h1>
+            <ul class="list-disc space-y-3 px-5 text-slate-500">
+                <li><a class="underline" href="./dark-mode-switch-component/">Dark Mode Switch Component</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
